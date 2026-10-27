@@ -127,8 +127,11 @@
   if (slides.length) {
     var index = 0;
     var dotsRoot = document.querySelector(".carousel-dots");
-    var captionTitle = document.querySelector(".carousel-caption h4");
-    var captionText = document.querySelector(".carousel-caption p");
+    var captionTop = document.querySelector(".carousel-caption-top");
+    var captionTitle = document.querySelector(".carousel-caption-top .cap-title")
+      || document.querySelector(".carousel-caption h4");
+    var captionText = document.querySelector(".carousel-caption-top .cap-desc")
+      || document.querySelector(".carousel-caption p");
     var autoplayTimer = null;
     var locked = false;
     var stage = document.querySelector(".carousel");
@@ -159,8 +162,19 @@
         else d.removeAttribute("aria-current");
       });
       var active = slides[index];
-      if (captionTitle) captionTitle.textContent = active.getAttribute("data-title") || "";
-      if (captionText) captionText.textContent = active.getAttribute("data-desc") || "";
+      var nextTitle = active.getAttribute("data-title") || "";
+      var nextDesc = active.getAttribute("data-desc") || "";
+      if (captionTop && captionTitle && captionText) {
+        captionTop.classList.add("is-fading");
+        setTimeout(function () {
+          captionTitle.textContent = nextTitle;
+          captionText.textContent = nextDesc;
+          captionTop.classList.remove("is-fading");
+        }, 220);
+      } else {
+        if (captionTitle) captionTitle.textContent = nextTitle;
+        if (captionText) captionText.textContent = nextDesc;
+      }
     }
 
     function goTo(i) {

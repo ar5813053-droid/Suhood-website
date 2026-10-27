@@ -58,10 +58,10 @@
   </div>
 
   <main id="top">
-    <!-- Hero -->
-    <section class="hero">
-      <div class="container hero-grid">
-        <div>
+    <!-- Hero + live app carousel -->
+    <section class="hero hero-carousel" id="preview">
+      <div class="container hero-carousel-wrap">
+        <div class="hero-copy-top reveal">
           <div class="hero-badge"><i></i> Android APK · Private beta</div>
           <h1>Your journey back to Allah.</h1>
           <p class="lead">
@@ -70,208 +70,59 @@
           </p>
           <div class="btn-row">
             <a class="btn btn-primary" data-download href="https://u.gy/Suhood-app">Download for Android</a>
-            <a class="btn btn-ghost" href="#preview" data-scroll="#preview">Explore Suhood</a>
+            <a class="btn btn-ghost" href="#features" data-scroll="#features">Explore features</a>
           </div>
           <p class="hero-note">Available as a direct Android APK. Not yet listed on Google Play.</p>
         </div>
-        <div class="hero-visual">
-          <div class="phone">
-            <img src="assets/phones/home.png" alt="Suhood home screen showing Salah times and Worship Quest" width="825" height="1650" fetchpriority="high" />
-          </div>
-        </div>
-      </div>
-    </section>
 
-    <!-- Brand intro -->
-    <section class="intro" id="about">
-      <div class="container intro-grid">
-        <div class="reveal">
-          <p class="section-label">What is Suhood</p>
-          <h2 class="section-title">A personal Deen companion for everyday life.</h2>
-        </div>
-        <div class="reveal">
-          <p>
-            Suhood is built for Muslims who want structure without pressure —
-            Salah reminders, Quran reading, Dhikr, Focus sessions, and a personalized
-            Worship Quest that grows with you.
-          </p>
-          <p>
-            It is designed to feel quiet and intentional: dark Hybrid Glass interface,
-            clear navigation, and tools that support consistency rather than guilt.
-            Your progress stays on your device; you stay in control.
-          </p>
-        </div>
-      </div>
-    </section>
-
-    <!-- Features -->
-    <section id="features">
-      <div class="container">
-        <div class="reveal">
-          <p class="section-label">Features</p>
-          <h2 class="section-title">Everything you need for daily Deen.</h2>
-          <p class="section-lead">
-            Real screens from the app. Each feature is designed to fit into ordinary days —
-            not to overwhelm them.
-          </p>
-        </div>
-      </div>
-
-      <div class="container">
-        <article class="feature-block reveal">
-          <div class="feature-copy">
-            <h3>Salah times &amp; home overview</h3>
-            <p>
-              See the next prayer at a glance, track today’s progress, and open Worship, Alarm,
-              Quran, and More from a single calm home screen.
-            </p>
-            <p>
-              Location-aware times help you stay oriented through the day. A Worship Quest bar
-              shows your current challenge progress without noise.
-            </p>
+        <div class="carousel hero-carousel-main" aria-roledescription="carousel" aria-label="Suhood app screens">
+          <div class="carousel-caption-top" aria-live="polite">
+            <h4 class="cap-title">Home</h4>
+            <p class="cap-desc">Next Salah, Worship Quest, and daily progress in one place.</p>
           </div>
-          <div class="feature-media">
-            <div class="phone">
-              <img src="assets/phones/home.png" alt="Suhood home with Maghrib countdown and Worship Quest" loading="lazy" width="825" height="1650" />
-            </div>
-          </div>
-        </article>
-
-        <article class="feature-block reverse reveal">
-          <div class="feature-copy">
-            <h3>Quran — reading &amp; Mushaf</h3>
-            <p>
-              Browse 114 surahs, continue where you left off, set a daily reading goal,
-              and open Madinah-style Mushaf pages with clear Arabic text.
-            </p>
-            <p>
-              Translation view supports deeper reading. Audio controls are available when
-              you want to listen along.
-            </p>
-          </div>
-          <div class="feature-media">
-            <div class="phone">
-              <img src="assets/phones/quran-home.png" alt="Suhood Quran library screen" loading="lazy" width="825" height="1650" />
-            </div>
-          </div>
-        </article>
-
-        <article class="feature-block reveal">
-          <div class="feature-copy">
-            <h3>Dhikr, Tasbeeh &amp; Duas</h3>
-            <p>
-              A focused Tasbeeh counter with loop tracking, and a searchable Hisn al-Muslim
-              collection for duas by moment and purpose.
-            </p>
-            <p>
-              Built for short, sincere sessions — whether you have one minute or ten.
-            </p>
-          </div>
-          <div class="feature-media">
-            <div class="phone">
-              <img src="assets/phones/tasbeeh.png" alt="Suhood Tasbeeh counter" loading="lazy" width="825" height="1650" />
-            </div>
-          </div>
-        </article>
-
-        <article class="feature-block reverse reveal">
-          <div class="feature-copy">
-            <h3>Focus &amp; Salah-time protection</h3>
-            <p>
-              Choose apps that distract you. During configured Salah windows, Suhood can
-              interrupt those apps and invite you back to prayer with a full-screen lock experience.
-            </p>
-            <p class="meta">
-              Effectiveness depends on Android permissions (Accessibility, Usage Access, and related settings)
-              and can vary by device manufacturer. Suhood never claims perfect system-level control.
-            </p>
-          </div>
-          <div class="feature-media">
-            <div class="phone">
-              <img src="assets/phones/quran-reading.png" alt="Suhood Quran reading with translation" loading="lazy" width="825" height="1650" />
-            </div>
-          </div>
-        </article>
-
-        <article class="feature-block reveal">
-          <div class="feature-copy">
-            <h3>Alarms with wake-up challenges</h3>
-            <p>
-              Set alarms with optional math, tap-sequence, or memory challenges so dismissing
-              them takes a moment of attention — useful for Fajr and early mornings.
-            </p>
-            <p class="meta">
-              Alarm delivery is subject to Android battery and background limits. Keep Suhood
-              unrestricted in battery settings for best results.
-            </p>
-          </div>
-          <div class="feature-media">
-            <div class="phone">
-              <img src="assets/phones/alarm.png" alt="Suhood alarm editor with wake-up challenge" loading="lazy" width="825" height="1650" />
-            </div>
-          </div>
-        </article>
-
-        <article class="feature-block reverse reveal">
-          <div class="feature-copy">
-            <h3>Qibla</h3>
-            <p>
-              A clean compass view with location context and clear turn guidance.
-              Hold the phone flat and rotate until the needle meets the Kaaba marker.
-            </p>
-          </div>
-          <div class="feature-media">
-            <div class="phone">
-              <img src="assets/phones/qibla.png" alt="Suhood Qibla compass" loading="lazy" width="825" height="1650" />
-            </div>
-          </div>
-        </article>
-      </div>
-    </section>
-
-    <!-- App preview carousel -->
-    <section class="preview" id="preview">
-      <div class="container">
-        <div class="reveal" style="text-align:center; margin-inline:auto;">
-          <p class="section-label">App Preview</p>
-          <h2 class="section-title">Designed for your daily Deen.</h2>
-          <p class="section-lead" style="margin-inline:auto;">
-            Explore real Suhood screens before you install. Swipe, use the arrows, or let the gallery move on its own.
-          </p>
-        </div>
-
-        <div class="carousel reveal" aria-roledescription="carousel">
           <div class="carousel-stage">
             <div class="carousel-track">
-              <div class="carousel-slide active" data-title="Home" data-desc="Next Salah, Worship Quest, and daily progress in one place.">
-                <img src="assets/phones/home.png" alt="Home screen" width="825" height="1650" loading="lazy" />
+              <div class="carousel-slide active"
+                   data-title="Home · Salah &amp; Worship Quest"
+                   data-desc="Maghrib countdown, Month 1 Consistency challenge, prayer &amp; tasbeeh progress, Focus tab.">
+                <img src="assets/phones/home.png" alt="Suhood Home — Maghrib time, Worship Quest, Today progress" width="825" height="1650" fetchpriority="high" />
               </div>
-              <div class="carousel-slide" data-title="Quran" data-desc="Surah list, daily goal, Mushaf and bookmarks.">
-                <img src="assets/phones/quran-home.png" alt="Quran home" width="825" height="1650" loading="lazy" />
+              <div class="carousel-slide"
+                   data-title="Quran · Surah library"
+                   data-desc="The Holy Quran — search, daily reading goal, Continue, Mushaf, Juz, and all 114 surahs.">
+                <img src="assets/phones/quran-home.png" alt="Suhood Quran library with daily reading goal" width="825" height="1650" loading="lazy" />
               </div>
-              <div class="carousel-slide" data-title="Reading" data-desc="Arabic with translation and audio controls.">
-                <img src="assets/phones/quran-reading.png" alt="Quran reading" width="825" height="1650" loading="lazy" />
+              <div class="carousel-slide"
+                   data-title="Quran · Reading with translation"
+                   data-desc="Al-Faatiha verse by verse — Arabic text, English translation, and audio controls.">
+                <img src="assets/phones/quran-reading.png" alt="Al-Faatiha with English translation" width="825" height="1650" loading="lazy" />
               </div>
-              <div class="carousel-slide" data-title="Mushaf" data-desc="Madinah-style pages for focused reading.">
-                <img src="assets/phones/mushaf.png" alt="Mushaf" width="825" height="1650" loading="lazy" />
+              <div class="carousel-slide"
+                   data-title="Mushaf · Madinah pages"
+                   data-desc="Uthmani script page view — Surah Al-Faatiha, page 1 of 604, Arabic focus mode.">
+                <img src="assets/phones/mushaf.png" alt="Mushaf Madinah pages Al-Faatiha" width="825" height="1650" loading="lazy" />
               </div>
-              <div class="carousel-slide" data-title="Tasbeeh" data-desc="Simple, tactile dhikr counting.">
-                <img src="assets/phones/tasbeeh.png" alt="Tasbeeh" width="825" height="1650" loading="lazy" />
+              <div class="carousel-slide"
+                   data-title="Tasbeeh · Dhikr counter"
+                   data-desc="Loop tracking, SubhanAllah counter, target presets 33 / 34 / 99 / 200, next dhikr.">
+                <img src="assets/phones/tasbeeh.png" alt="Tasbeeh counter SubhanAllah" width="825" height="1650" loading="lazy" />
               </div>
-              <div class="carousel-slide" data-title="Duas" data-desc="Search Hisn al-Muslim by moment and purpose.">
-                <img src="assets/phones/duas.png" alt="Find Duas" width="825" height="1650" loading="lazy" />
+              <div class="carousel-slide"
+                   data-title="Find Duas · Hisn al-Muslim"
+                   data-desc="Search by name or purpose — Upon waking up and authentic references from the collection.">
+                <img src="assets/phones/duas.png" alt="Find Duas Hisn al-Muslim list" width="825" height="1650" loading="lazy" />
               </div>
-              <div class="carousel-slide" data-title="Alarm" data-desc="Wake-up challenges for intentional mornings.">
-                <img src="assets/phones/alarm.png" alt="Alarm" width="825" height="1650" loading="lazy" />
+              <div class="carousel-slide"
+                   data-title="Alarm · Wake-up challenge"
+                   data-desc="Time wheel with AM/PM, repeat, label, sound, snooze, and math / tap / memory challenges.">
+                <img src="assets/phones/alarm.png" alt="Add Alarm with wake-up challenge" width="825" height="1650" loading="lazy" />
               </div>
-              <div class="carousel-slide" data-title="Qibla" data-desc="Compass guidance with location context.">
-                <img src="assets/phones/qibla.png" alt="Qibla" width="825" height="1650" loading="lazy" />
+              <div class="carousel-slide"
+                   data-title="Qibla · Compass"
+                   data-desc="Live heading, turn guidance, location chip, and clear how-to for accurate direction.">
+                <img src="assets/phones/qibla.png" alt="Qibla compass Noida" width="825" height="1650" loading="lazy" />
               </div>
             </div>
-          </div>
-          <div class="carousel-caption">
-            <h4>Home</h4>
-            <p>Next Salah, Worship Quest, and daily progress in one place.</p>
           </div>
           <div class="carousel-controls">
             <button class="carousel-btn prev" type="button" aria-label="Previous screenshot">
@@ -302,29 +153,33 @@
     <section class="founder" id="founder">
       <div class="container founder-grid">
         <div class="founder-photo reveal">
-          <img src="assets/brand/founder.png" alt="Portrait of the Suhood founder" width="745" height="754" loading="lazy" />
+          <img src="assets/brand/founder.png" alt="Syed Furqan, Founder of Suhood" width="745" height="754" loading="lazy" />
         </div>
         <div class="founder-text">
           <p class="section-label reveal-line"><span>Founder</span></p>
           <h2 class="section-title">
-            <span class="reveal-line"><span>Built with</span></span>
-            <span class="reveal-line"><span>intention.</span></span>
+            <span class="reveal-line"><span>A Personal Mission.</span></span>
+            <span class="reveal-line"><span>A Purpose Bigger Than Me.</span></span>
           </h2>
-          <p class="reveal">
-            <!-- EDITABLE FOUNDER BIO: replace this paragraph with your approved text before public launch. -->
-            Suhood began as a personal need for a calmer way to stay connected with daily worship —
-            Salah, Quran, and dhikr — without the noise of typical productivity apps.
-            Every screen is shaped with that same quiet focus in mind.
-          </p>
-          <p class="founder-note">
-            Suggested draft — please personalize name, background, and story before public launch.
-            No unverified personal claims are published here.
-          </p>
+          <p class="founder-sub reveal">The story behind Suhood — by Syed Furqan, Founder.</p>
+          <div class="founder-story reveal">
+            <p>“Suhood began with a simple intention: to help Muslims reconnect with their faith in a world full of distractions.</p>
+            <p>I believe technology should do more than keep us scrolling. It should help us become more mindful of our time, more consistent in our worship, and more intentional about the way we live.</p>
+            <p>That belief inspired Suhood — a faith-centered experience designed to bring Salah, Quran, Dhikr, and mindful focus into everyday life.</p>
+            <p>My vision isn't simply to build another app. It's to create a tool that encourages small, consistent steps towards a better relationship with Allah, without turning worship into a competition or a source of pressure.</p>
+            <p>Suhood is a journey, and this is only the beginning.”</p>
+          </div>
+          <div class="founder-sign reveal">
+            <strong>Syed Furqan</strong>
+            <span>Founder of Suhood</span>
+            <p class="founder-quote">“Built with purpose. Guided by intention. For the sake of something greater.”</p>
+          </div>
         </div>
       </div>
     </section>
 
     <!-- Privacy / trust -->
+
     <section class="trust" id="privacy">
       <div class="container">
         <div class="reveal">
