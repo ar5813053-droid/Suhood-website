@@ -33,7 +33,7 @@ No environment variables are required.
 
 All Download CTAs use:
 
-`https://github.com/ar5813053-droid/Suhood/releases/download/build-190/app-release.apk`
+`/downloads/Suhood.apk`
 
 Configured once in `js/main.js` as `APK_DOWNLOAD_URL`.
 

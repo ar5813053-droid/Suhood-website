@@ -1,7 +1,7 @@
 (function () {
   "use strict";
 
-  const APK_DOWNLOAD_URL = "https://github.com/ar5813053-droid/Suhood/releases/download/build-190/app-release.apk";
+  const APK_DOWNLOAD_URL = "/downloads/Suhood.apk";
   const INSTAGRAM_URL = "https://www.instagram.com/suhood.app?cplk=MTQzdzdwbWQ2bTRm";
   const SUPPORT_EMAIL = "support.suhood@gmail.com";
 
@@ -15,7 +15,7 @@
   // Wire all download CTAs to the direct release APK asset
   document.querySelectorAll("[data-download]").forEach(function (el) {
     el.setAttribute("href", APK_DOWNLOAD_URL);
-    el.setAttribute("download", "Suhood-build-190.apk");
+    el.setAttribute("download", "Suhood.apk");
     // Prefer same-tab navigation so mobile browsers start the APK download
     el.removeAttribute("target");
     el.setAttribute("rel", "noopener noreferrer");
